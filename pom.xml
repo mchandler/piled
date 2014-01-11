@@ -24,7 +24,7 @@
   					<manifest>
   						<addClasspath>true</addClasspath>
   						<classpathPrefix>lib/</classpathPrefix>
-  						<mainClass>com.rmwebfx.PiLed</mainClass>
+  						<mainClass>com.rmwebfx.piled.PiLed</mainClass>
   					</manifest>
   				</archive>
   			</configuration>
