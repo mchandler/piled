@@ -13,4 +13,23 @@
   		<version>0.0.5</version>
   	</dependency>
   </dependencies>
+  
+  <build>
+  	<plugins>
+  		<plugin>
+  			<groupId>org.apache.maven.plugins</groupId>
+  			<artifactId>maven-jar-plugin</artifactId>
+  			<configuration>
+  				<archive>
+  					<manifest>
+  						<addClasspath>true</addClasspath>
+  						<classpathPrefix>lib/</classpathPrefix>
+  						<mainClass>com.rmwebfx.PiLed</mainClass>
+  					</manifest>
+  				</archive>
+  			</configuration>
+  		</plugin>
+  	</plugins>
+  </build>
+  
 </project>
