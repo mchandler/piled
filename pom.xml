@@ -18,15 +18,16 @@
   	<plugins>
   		<plugin>
   			<groupId>org.apache.maven.plugins</groupId>
-  			<artifactId>maven-jar-plugin</artifactId>
+  			<artifactId>maven-assembly-plugin</artifactId>
   			<configuration>
   				<archive>
   					<manifest>
-  						<addClasspath>true</addClasspath>
-  						<classpathPrefix>lib/</classpathPrefix>
   						<mainClass>com.rmwebfx.piled.PiLed</mainClass>
   					</manifest>
   				</archive>
+  				<descriptiorRefs>
+  					<descriptorRef>jar-with-dependencies</descriptorRef>
+  				</descriptiorRefs>
   			</configuration>
   		</plugin>
   	</plugins>
